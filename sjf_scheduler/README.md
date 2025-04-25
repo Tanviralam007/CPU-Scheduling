@@ -1,8 +1,13 @@
 # **SJF Scheduling**
-- Test Impelementation of the **Shortest Job First**, a CPU Scheduling Algorithm
+## **Test Implementation of Shortest Job First (SJF) Scheduling**
 
-## **Sample Input-Output**
+The **Shortest Job First (SJF)** algorithm, a CPU scheduling technique that selects the process with the smallest burst time for execution next. Below is an example of its implementation:
 
+---
+
+### **Sample Input**
+
+```plaintext
 Enter the number of processes: 4
 
 Process 1 details:
@@ -28,15 +33,24 @@ Process ID: 4
 Process Name: Process D
 Arrival Time: 3
 Burst Time: 8
+```
 
-Shortest Job First (SJF) Scheduling Results:
-------------------------------------------------------------------------------
-PID     Process        Arrival     Burst       Completion  Turnaround  Waiting     
-------------------------------------------------------------------------------
-1       Process A      0           6           6           6           0           
-2       Process B      1           4           12          11          7           
-3       Process C      2           2           8           6           4           
-4       Process D      3           8           20          17          9           
-------------------------------------------------------------------------------
-Average Waiting Time: 5
-Average Turnaround Time: 10
+---
+
+### **SJF Scheduling Results**
+
+| **PID** | **Process**   | **Arrival Time** | **Burst Time** | **Completion Time** | **Turnaround Time** | **Waiting Time** |
+|---------|---------------|------------------|----------------|---------------------|---------------------|------------------|
+| 1       | Process A     | 0                | 6              | 6                   | 6                   | 0                |
+| 2       | Process B     | 1                | 4              | 12                  | 11                  | 7                |
+| 3       | Process C     | 2                | 2              | 8                   | 6                   | 4                |
+| 4       | Process D     | 3                | 8              | 20                  | 17                  | 9                |
+
+---
+
+### **Performance Metrics**
+
+- **Average Waiting Time**: `5`
+- **Average Turnaround Time**: `10`
+
+---
